@@ -14,12 +14,13 @@ body {
     display: grid;
     width: 100vw;
     height: auto;
-    grid-template: repeat(5, 70vh) 400px / 1fr;
+    grid-template: repeat(5, 80vh) 400px / 1fr;
+    scroll-behavior: smooth;
 }
 
 /* Home */
 
-.home header {
+#home header {
     height: 100px;
     display: flex;
     justify-content: space-between;
@@ -28,60 +29,59 @@ body {
     
 }
 
-.home header h1 {
+#home header h1 {
     color: var(--color-orange);
     font-size: 3em;
 }
 
-.home header nav {
+#home header nav {
     display: flex;
     gap: 30px;
     font-size: 1.5em;
 }
 
-.home header nav li a {
+#home header nav li a {
     color: var(--color-white);
     transition-duration: 0.2s;
 }
 
-.home header nav li a:hover {
+#home header nav li a:hover {
     color: var(--color-orange);
     transition-duration: 0.2s;
 }
 
-.home .container {
+#home .container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: calc(100% - 100px);
 }
-.home .container .fullWebsite {
+#home .container .fullWebsite {
     display: flex;
     flex-direction: column;
     width: 35%;
 }
-.home .container .fullWebsite h1 {
+#home .container .fullWebsite h2 {
     color: var(--color-orange);
     font-size: 6em;
 }
-.home .container .fullWebsite p {
+#home .container .fullWebsite p {
     color: var(--color-white);
     font-size: 2.2em;
 }
-.home .container .fullWebsite button {
+#home .container .fullWebsite button {
     margin-top: 25px;
-    width: 10vw;
+    width: 220px;
     background-color: var(--color-orange);
     color: var(--color-white);
     font-size: 1.5em;
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
     transition: 0.2s;
 
 }
 
-.home .container .fullWebsite button:hover {
+#home .container .fullWebsite button:hover {
     background-color: var(--color-white);
     color:var(--color-orange);
     cursor: pointer;
@@ -89,8 +89,58 @@ body {
     transition: 0.2s;
 }
 
-.home .container img {
+#home .container img {
     height: 90%;
 }
 
 /* About Us */
+
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6%;
+}
+#about .aboutText {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    gap: 10px;
+}
+#about .aboutText h2 {
+    color: var(--color-white);
+    font-size: 3.2em;
+}
+
+#about .aboutText p:first-child {
+    color: var(--color-orange);
+    font-size: 1.8em;
+}
+
+#about .aboutText p {
+    color: var(--color-white);
+    font-size: 1.5em;
+}
+#about .aboutText button {
+    margin-top: 25px;
+    width: 200px;
+    background-color: var(--color-orange);
+    color: var(--color-white);
+    font-size: 1.5em;
+    padding: 10px 20px;
+    border: none;
+    transition: 0.2s;
+
+}
+
+#about .aboutText button:hover {
+    background-color: var(--color-white);
+    color:var(--color-orange);
+    cursor: pointer;
+    scale: 1.1;
+    transition: 0.2s;
+}
+
+#about img {
+    height: 70%;
+}
