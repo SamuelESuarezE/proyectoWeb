@@ -1,7 +1,74 @@
+@import url(variables.css);
+
 * {
     margin: 0;
     padding: 0;
     text-decoration: none;
+    list-style: none;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
+body {
+    background-color: var(--color-body);
+    display: grid;
+    width: 100vw;
+    height: auto;
+    grid-template: repeat(5, 70vh) 400px / 1fr;
+}
+
+.home header {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 5vw;
+    
+}
+
+.home header h1 {
+    color: var(--color-orange);
+    font-size: 3em;
+}
+
+.home header ul {
+    display: flex;
+    gap: 30px;
+    font-size: 1.2em;
+}
+
+.home header ul li a {
+    color: var(--color-white);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .fullWebsite {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+.container .fullWebsite h1 {
+    color: var(--color-orange);
+    font-size: 6em;
+}
+.container .fullWebsite p {
+    color: var(--color-white);
+    font-size: 2.2em;
+}
+.container .fullWebsite button {
+    background-color: var(--color-orange);
+    color: var(--color-white);
+    font-size: 2em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.container .fullWebsite button:hover {}
+.container .fullWebsite button:active {}
+.container .fullWebsite button:focus {}
+.container img {}
