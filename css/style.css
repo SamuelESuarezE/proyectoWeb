@@ -17,6 +17,8 @@ body {
     grid-template: repeat(5, 70vh) 400px / 1fr;
 }
 
+/* Home */
+
 .home header {
     height: 100px;
     display: flex;
@@ -31,44 +33,64 @@ body {
     font-size: 3em;
 }
 
-.home header ul {
+.home header nav {
     display: flex;
     gap: 30px;
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
 
-.home header ul li a {
+.home header nav li a {
     color: var(--color-white);
+    transition-duration: 0.2s;
 }
 
-.container {
+.home header nav li a:hover {
+    color: var(--color-orange);
+    transition-duration: 0.2s;
+}
+
+.home .container {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: calc(100% - 100px);
 }
-.container .fullWebsite {
+.home .container .fullWebsite {
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 35%;
 }
-.container .fullWebsite h1 {
+.home .container .fullWebsite h1 {
     color: var(--color-orange);
     font-size: 6em;
 }
-.container .fullWebsite p {
+.home .container .fullWebsite p {
     color: var(--color-white);
     font-size: 2.2em;
 }
-.container .fullWebsite button {
+.home .container .fullWebsite button {
+    margin-top: 25px;
+    width: 10vw;
     background-color: var(--color-orange);
     color: var(--color-white);
-    font-size: 2em;
+    font-size: 1.5em;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
+    transition: 0.2s;
+
 }
-.container .fullWebsite button:hover {}
-.container .fullWebsite button:active {}
-.container .fullWebsite button:focus {}
-.container img {}
+
+.home .container .fullWebsite button:hover {
+    background-color: var(--color-white);
+    color:var(--color-orange);
+    cursor: pointer;
+    scale: 1.1;
+    transition: 0.2s;
+}
+
+.home .container img {
+    height: 90%;
+}
+
+/* About Us */
