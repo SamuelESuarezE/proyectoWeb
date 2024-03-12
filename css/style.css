@@ -260,3 +260,43 @@ header nav li a:hover {
     margin-top: 10px;
     font-size: 2em;
 }
+
+/* Learn */
+
+#learn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#learn .learnContainer {
+    width: 85%;
+    height: 60%;
+    background-color: var(--color-beige);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#learn .learnContainer h2 {
+    color: var(--color-black);
+    font-size: 4em;
+    text-align: center;
+}
+#learn .learnContainer button {
+    margin-top: 25px;
+    width: 200px;
+    background-color: var(--color-orange);
+    color: var(--color-white);
+    font-size: 1.5em;
+    padding: 10px 20px;
+    border: none;
+    transition: 0.2s;
+}
+#learn .learnContainer button:hover {
+    background-color: var(--color-white);
+    color:var(--color-orange);
+    cursor: pointer;
+    scale: 1.1;
+    transition: 0.2s;
+}
+
