@@ -32,6 +32,17 @@ header {
     
 }
 
+header svg {
+    height: 40px;
+    width: 40px;
+    fill: var(--color-orange);
+}
+
+.checkbtn, #check {
+    display: none;
+}
+
+
 header h1 {
     color: var(--color-orange);
     font-size: 3vw;
@@ -335,10 +346,48 @@ orangeLine {
     }
 
     /* Header */
-
+    header {
+        position: relative;
+    }
     header h1 {
         font-size: 30px;
     }
+
+    header nav {
+        padding-block: 20px;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        top: 80px;
+        left: -100%;
+        position: fixed;
+        width: 100vw;
+        height: auto;
+        background-color: var(--color-menuMobile);
+        transition: all .5s;
+        font-weight: normal;
+    }
+
+    nav li{
+        font-size: 8vw;
+    }
+
+    .checkbtn {
+        display: block;
+        position: absolute;
+        right: 20px;
+    }
+
+    .checkbtn svg:hover, .checkbtn svg:active {
+        fill: white;
+    }
+
+    #check:checked ~ header nav {
+        left: 0;
+    }
+    
 
     /* Home */
 
