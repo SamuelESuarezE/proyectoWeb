@@ -394,7 +394,6 @@ circle svg {
 
     #check:checked + .navegador {
         opacity: 1;
-        
         padding-block: 20px;
         height: 45vh;
     }
