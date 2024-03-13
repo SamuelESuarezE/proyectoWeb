@@ -7,3 +7,65 @@
     box-sizing: border-box;
     font-family: "Semibold";
 }
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+    background-color: var(--color-vine);
+    padding: 2vw;
+}
+
+/* Aside */
+
+aside {
+    padding-block: 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    background-color: var(--color-vine);
+}
+
+aside h1 {
+    font-size: 2.5rem;
+    color: var(--color-white);
+}
+
+aside a {
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.productOptions {
+    height: 20%;
+    display: grid;
+    grid-template: repeat(4, 1fr);
+    gap: 1vw;
+}
+
+.productOption svg {
+    height: 100%;
+    width: 40px;
+}
+
+.productOption, .carrito {
+    font-size: 1.6vw;
+}
+
+aside p {
+    color: var(--color-white);
+    font-size: 1.8vw;
+}
+
+/* Main */
+
+main {
+    height: 100%;
+    background-color: var(--color-white);
+    border-radius: 50px ;
+}
