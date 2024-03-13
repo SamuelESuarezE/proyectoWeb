@@ -325,8 +325,11 @@ button:hover {
 }
 
 circle {
-    width: 1.5vw;
-    height: 1.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2vw;
+    height: 2vw;
     background-color: var(--color-orange);
     border-radius: 100%;
 }
@@ -337,6 +340,12 @@ orangeLine {
     width: 50%;
     background-color: var(--color-orange);
     margin-bottom: 1vw;
+}
+
+circle svg {
+    height: 60%;
+    width: 60%;
+    margin-inline: auto;
 }
 
 @media (max-width:768px) {
