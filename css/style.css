@@ -22,6 +22,30 @@ body{
     grid-template-rows: 100px repeat(5, 45vw) 16vw;
 }
 
+.section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+  
+section, header{
+    opacity: 0;
+    transition: 1s;
+    animation: fadeInUp 2s forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+  
+
 /* Home */
 
 header {
