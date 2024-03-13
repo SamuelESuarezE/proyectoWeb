@@ -25,7 +25,6 @@ body{
 /* Home */
 
 header {
-    height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -87,7 +86,6 @@ button {
     align-items: center;
     border: none;
     transition: 0.2s;
-
 }
 
 button:hover {
@@ -133,7 +131,7 @@ button:hover {
 
 
 #about img {
-    height: 80%;
+    width: 30%;
 }
 
 /* Food Menu */
@@ -223,7 +221,6 @@ button:hover {
     margin-top: 20px;
     padding: 10px;
     gap: 50px;
-    height: 70%;
 }
 
 .service {
@@ -306,8 +303,9 @@ button:hover {
     font-size: 1.4vw;
 }
 
-.footerDivision p {
+.footerDivision a {
     font-size: 1vw;
+    color: var(--color-white);
 }
 
 .circulos {
@@ -328,4 +326,225 @@ orangeLine {
     width: 50%;
     background-color: var(--color-orange);
     margin-bottom: 1vw;
+}
+
+@media (max-width:768px) {
+    body{
+        grid-template-rows: 80px 60vh 72vh 150vh 160vh 20vh 90vh;
+        gap: 70px;
+    }
+
+    /* Header */
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    /* Home */
+
+    #home, #about {
+        flex-direction: column;
+    }
+    
+    #home .fullWebsite, .aboutText {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    #home .fullWebsite h2 {
+        font-size: 13vw;
+    }
+    #home .fullWebsite p {
+        font-size: 5vw;
+    }
+    
+    button {
+        margin-block: 15px;
+        width: 35vw;
+        font-size: 4vw;
+    }
+    
+    button:hover {
+        scale: 1;
+    }
+    
+    #home img {
+        width: 70%;
+    }
+
+    /* About Us */
+
+    #about {
+        position: relative;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 6%;
+    }
+
+    #about .aboutText {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+    }
+    #about .aboutText h2 {
+        color: var(--color-white);
+        font-size: 9vw;
+    }
+    
+    #about .aboutText p:first-child {
+        color: var(--color-orange);
+        font-size: 5vw;
+    }
+    
+    #about .aboutText p {
+        color: var(--color-white);
+        font-size: 5vw;
+    }
+    
+    #about img {
+        position: absolute;
+        bottom: 0;
+        width: 70%;
+    }
+
+    /* Food Menu */
+
+    #menu p:first-child {
+        font-size: 5vw;;
+    }
+
+    #menu h2 {
+        text-align: center;
+        font-size: 9vw;
+        width: 85%;
+    }
+
+    #menu .menuContainer {
+        width: 80%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 25px;
+    }
+
+    .product img {
+        width: 80%;
+    }
+
+    .product:hover {
+        scale: 1;
+    }
+
+    .product p {
+        font-size: 5vw;
+    }
+    .product small {
+        font-size: 4vw;
+    }
+
+    /* Services */
+
+    #services p:first-child {
+        font-size: 5vw;;
+    }
+    
+    #services h2 {
+        font-size: 9vw;
+        width: 85%;
+        text-align: center;
+    }
+    
+    #services .servicesContainer {
+        width: 80%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 25px;
+    }
+    
+    .service img {
+        width: 80%;
+    }
+    
+    .service:hover {
+        scale: 1;
+    }
+    
+    .service :nth-child(2){
+        font-weight: bold;
+        color: var(--color-orange);
+        font-size: 6vw;
+    }
+    
+    .service p {
+        text-align: center;
+        margin-top: 10px;
+        font-size: 4vw;
+    } 
+
+    /* Learn */
+
+    #learn .learnContainer {
+        width: 90%;
+        height: 100%;
+        background-color: var(--color-beige);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #learn .learnContainer h2 {
+        color: var(--color-black);
+        font-size: 5vw;
+        text-align: center;
+    }
+
+    /* Footer */
+
+    #footer {
+        margin-inline: 10vw;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1.1fr 1.1fr 1.2fr;
+        gap: 20px;
+        padding-left: 20px;
+    }
+    
+    #footer .footerDivision:last-child {
+        place-self: center;
+    }
+
+    .footerDivision {
+        display: flex;
+        flex-direction: column;
+        color: var(--color-white);
+        gap: 0.5vw;
+        width: 50%;
+    }
+    
+    .footerDivision h3 {
+        font-size: 5.5vw;
+    }
+    
+    .footerDivision a {
+        font-size: 4vw;
+ 
+    }
+    
+    .circulos {
+        display: flex;
+        gap: 1vw;
+    }
+    
+    circle {
+        width: 8vw;
+        height: 8vw;
+    }
+    
+    orangeLine {
+        height:1vw;
+        width: 50%;
+    }
 }
