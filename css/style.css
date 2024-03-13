@@ -591,8 +591,17 @@ orangeLine {
     }
     
     circle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 8vw;
         height: 8vw;
+    }
+
+    circle svg {
+        height: 60%;
+        width: 60%;
+        margin-inline: auto;
     }
     
     orangeLine {
