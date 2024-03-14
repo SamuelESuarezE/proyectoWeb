@@ -375,8 +375,8 @@ circle svg {
 
 @media (max-width:768px) {
     body{
-        grid-template-rows: 80px 60vh 72vh 150vh 160vh 20vh 90vh;
-        gap: 70px;
+        grid-template-rows: 80px 550px 650px 1200px 1300px 200px 750px;
+        gap: 15vh;
     }
 
     /* Header */
@@ -493,7 +493,7 @@ circle svg {
     #about img {
         position: absolute;
         bottom: 0;
-        width: 70%;
+        width: 75%;
     }
 
     /* Food Menu */
