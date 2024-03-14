@@ -22,17 +22,12 @@ body{
     grid-template-rows: 100px repeat(5, 45vw) 16vw;
 }
 
-.section {
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
-}
-  
 section, header{
     opacity: 0;
     transition: 1s;
     animation: fadeInUp 2s forwards;
 }
+
 
 @keyframes fadeInUp {
     from {
@@ -375,8 +370,10 @@ circle svg {
 
 @media (max-width:768px) {
     body{
-        grid-template-rows: 80px 550px 650px 1200px 1300px 200px 750px;
-        gap: 15vh;
+        grid-template-rows: 1fr 5fr 6fr;
+        height: 4800px;
+        gap: 100px;
+        height: auto;
     }
 
     /* Header */
@@ -493,7 +490,8 @@ circle svg {
     #about img {
         position: absolute;
         bottom: 0;
-        width: 75%;
+        height: 42%;
+        width: auto;
     }
 
     /* Food Menu */
